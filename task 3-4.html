@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           
+        </title>
+    </head>
+    <body>
+        <p id="v"></p>
+        <p id="v1"></p>
+        <p id="v2"></p>
+        <p id="v3"></p>
+        <p id="v4"></p>
+        <p id="v5"></p>
+        <p id="v6"></p>
+        <p id="v7"></p>
+        <script>
+            const holdCabinet1 = ["duct tape", "gum", 3.14, false, 6.022e23];
+            const holdCabinet2 = ["orange drink", "nerf toys", "camera", 42, "parsnip"];
+            const con12 = holdCabinet1.concat(holdCabinet2);
+            document.getElementById("v").innerHTML = con12;
+            document.getElementById("v1").innerHTML  = holdCabinet1;
+            document.getElementById("v2").innerHTML  = holdCabinet1.slice(1);
+            document.getElementById("v3").innerHTML  = holdCabinet2.slice(1);
+            document.getElementById("v4").innerHTML = con12;
+            document.getElementById("v5").innerHTML  = holdCabinet1.reverse();
+            document.getElementById("v6").innerHTML  = holdCabinet2.sort();
+            document.getElementById("v7").innerHTML = con12;
+        </script>
+    </body>
+</html>

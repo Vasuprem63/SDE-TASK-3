@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+        </title>
+    </head>
+    <body>
+    <p id="a"></p>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <p id="a5"></p>
+    <p id="a6"></p>
+    <p id="a7"></p>
+    <p id="a8"></p>
+        <script>
+            let people = ["Greg", "Mary", "Devon", "James"];
+            for(var i=0;i<people.length;i++)
+            {
+                console.log(people[i]);
+            }
+
+          people.shift();
+          document.getElementById("a").innerHTML = people;
+          people.pop();
+          document.getElementById("a1").innerHTML = people;
+          people.unshift("Matt");
+          document.getElementById("a2").innerHTML = people;
+          people.push("Rahul")
+          document.getElementById("a3").innerHTML = people;
+
+          for(var i=0;i<people.length;i++)
+            {
+                console.log(people[i]);
+                if(people[i]=='Mary')
+                {
+                    break;
+                }
+            }
+
+        document.getElementById("a4").innerHTML = people.slice(2);
+        document.getElementById("a5").innerHTML = people.indexOf("Mary");
+        document.getElementById("a6").innerHTML = people.indexOf("Foo");
+        people.splice(2,1,"Elizabeth", "Artie");
+        document.getElementById("a7").innerHTML = people;
+
+        let withBob ='Bob';
+       const con = people.concat(withBob)
+        document.getElementById("a8").innerHTML = con;
+     </script>
+    </body>
+</html>

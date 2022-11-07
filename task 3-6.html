@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           
+        </title>
+    </head>
+    <body>
+        <p id="a"></p>
+        <p id="a1"></p>
+        <p id="a2"></p>
+        <p id="a3"></p>
+        <p id="a4"></p>
+        <p id="a5"></p>
+        <script>
+            const element1 = ['hydrogen', 'H', 1.008];
+            const element2 = ['helium', 'He', 4.003];
+            const element26 = ['iron', 'Fe', 55.85];
+            
+            const table = [];
+            table.push(element1);
+            table.push(element2);
+            table.push(element26);
+            document.getElementById("a").innerHTML  = table;  
+            
+            document.getElementById("a1").innerHTML = table[0];
+            document.getElementById("a2").innerHTML = table[1][1];
+
+            document.getElementById("a3").innerHTML = table[0][2];
+            document.getElementById("a4").innerHTML = table[1][0];
+            document.getElementById("a5").innerHTML = table[2][1];
+        </script>
+    </body>
+</html>
